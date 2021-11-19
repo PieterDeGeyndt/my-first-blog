@@ -7,7 +7,10 @@
                 {{ post.published_date }}
             </time>
             <h2><a href="{% url 'post_detail' pk=post.pk %}">{{ post.title }}</a></h2>
+            <img class="thumbnail" src={{post.thumb.url}}>
             <p>{{ post.text|linebreaksbr }}</p>
+            <div class="horizontal_line">
+            </div>
         </article>
     {% endfor %}
 {% endblock %}

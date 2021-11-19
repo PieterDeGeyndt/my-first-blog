@@ -9,6 +9,7 @@ class Post(models.Model):
     text = models.TextField()
     created_date = models.DateTimeField(default=timezone.now)
     published_date = models.DateTimeField(blank=True, null=True)
+    thumb = models.ImageField(blank=True, default='PiscoSour.png')
 
     def publish(self):
         self.published_date = timezone.now()
