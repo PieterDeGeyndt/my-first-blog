@@ -9,8 +9,8 @@
             <h2><a href="{% url 'post_detail' pk=post.pk %}">{{ post.title }}</a></h2>
             <img class="thumbnail" src={{post.thumb.url}}>
             <p>{{ post.text|linebreaksbr }}</p>
-            <div class="horizontal_line">
-            </div>
+                <button id="foot"><a class="button-os" href="#">{% include './icons/cart-plus-fill.svg' %}</a></button></button>
+                <button id="foot"><a class="button-os" href="#">{% include './icons/cart-x-fill.svg' %}</a></button></button>
         </article>
     {% endfor %}
 {% endblock %}
