@@ -24,7 +24,7 @@
     margin-left: -75px;
 }
 
-/*Menu*/
+/*Navigation Menu*/
 
 .menu-background {
     background-color: #333333;
@@ -90,6 +90,15 @@ h4 {
     float: left;
     margin-left: -120px;
     margin-top: -40px;
+}
+
+.post-button,
+.post-button:hover,
+.post-button:visited {
+    color: black;
+    font-size:26pt;
+    padding: 5px;
+    float:right;
 }
 
 /*Post-Details*/

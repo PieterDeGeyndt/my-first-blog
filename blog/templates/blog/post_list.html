@@ -8,9 +8,14 @@
             </time>
             <h2><a href="{% url 'post_detail' pk=post.pk %}">{{ post.title }}</a></h2>
             <img class="thumbnail" src={{post.thumb.url}}>
-            <p>{{ post.text|linebreaksbr }}</p>
-                <button id="foot"><a class="button-os" href="#">{% include './icons/cart-plus-fill.svg' %}</a></button></button>
-                <button id="foot"><a class="button-os" href="#">{% include './icons/cart-x-fill.svg' %}</a></button></button>
+            <p>{{ post.text|linebreaksbr }}
+                <a href="{% url 'post_new' %}" class="post-button">
+                {% include './icons/cart-plus-fill.svg' %}
+                </a>
+                <a href="{% url 'post_new' %}" class="post-button">
+                {% include './icons/cart-x-fill.svg' %}
+                </a>
+            </p>
         </article>
     {% endfor %}
 {% endblock %}
